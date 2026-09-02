@@ -4,6 +4,7 @@ const express = require("express");
 const cors = require("cors");
 const pool = require("./config/db");
 const tradeRoutes = require("./routes/tradeRoutes");
+const pullRoutes = require("./routes/pullRoutes");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -18,22 +19,21 @@ app.get("/", (req, res) => {
 });
 
 app.get("/health/db-info", async (req, res) => {
-    try {
-        const result = await pool.query(`
+  try {
+    const result = await pool.query(`
             SELECT
                 current_database(),
                 current_schema()
         `);
 
-        res.json(result.rows[0]);
+    res.json(result.rows[0]);
+  } catch (error) {
+    console.error(error);
 
-    } catch (error) {
-        console.error(error);
-
-        res.status(500).json({
-            message: "Database check failed"
-        });
-    }
+    res.status(500).json({
+      message: "Database check failed",
+    });
+  }
 });
 app.get("/health/db", async (req, res) => {
   try {
@@ -53,6 +53,7 @@ app.get("/health/db", async (req, res) => {
 });
 
 app.use("/api/trades", tradeRoutes);
+app.use("/api/pulls", pullRoutes);
 
 app.listen(PORT, () => {
   console.log(`Trade ingestion running on port ${PORT}`);
