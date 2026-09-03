@@ -21,6 +21,7 @@ const symbols = [
   "AXISBANK",
   "LT",
 ];
+const tradeStore = [];
 
 function randomItem(array) {
   return array[Math.floor(Math.random() * array.length)];
@@ -43,7 +44,7 @@ function generateTimestamp() {
 
   return new Date(time).toISOString();
 }
-function generateTrade(index) {
+function createTrade(index) {
   return {
     tradeId: `TRD${String(index).padStart(5, "0")}`,
     client: randomItem(clients),
@@ -53,16 +54,23 @@ function generateTrade(index) {
     timestamp: generateTimestamp(),
   };
 }
-function generateTrades(count = 5000) {
-  const trades = [];
+function addNewTrades(count = 1000) {
+  const startingId = tradeStore.length + 1;
 
-  for (let i = 1; i <= count; i++) {
-    trades.push(generateTrade(i));
+  for (let i = 0; i < count; i++) {
+    const trade = createTrade(startingId + i);
+
+    tradeStore.push(trade);
   }
 
-  return trades;
+  return tradeStore;
+}
+
+function getTrades() {
+  return tradeStore;
 }
 
 module.exports = {
-  generateTrades,
+  addNewTrades,
+  getTrades
 };

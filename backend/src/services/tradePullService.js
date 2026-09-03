@@ -1,7 +1,7 @@
 const axios = require("axios");
 const pool = require("../config/db");
 
-async function pullTrades(jobId) {
+async function pullTrades(jobId, io) {
   try {
     console.log(`Starting Trade pull. Job Id: ${jobId}`);
     await pool.query(
@@ -14,17 +14,24 @@ async function pullTrades(jobId) {
             `,
       ["RUNNING", jobId],
     );
+    io.emit("PULL_RUNNING", {
+      jobId,
+      status: "RUNNING",
+    });
 
     const response = await axios.get(
-      `${process.env.BSE_API_URL}/getTrades?count=5000`,
+      `${process.env.BSE_API_URL}/getTrades?newTrades=1000`,
     );
 
     const trades = response.data.trades;
 
     console.log(`${trades.length} trades received`);
 
+    let newTrades = 0;
+    let duplicates = 0;
     for (const trade of trades) {
-      await pool.query(
+     const result =  await pool.query(
+
         `
                 INSERT INTO trades (
                     trade_id,
@@ -47,7 +54,15 @@ async function pullTrades(jobId) {
           trade.timestamp,
         ],
       );
+      if (result.rowCount === 1) {
+        newTrades++;
+      } else {
+        duplicates++;
+      }
     }
+
+    console.log(`New trades inerted, ${newTrades}`);
+    console.log(`Duplicate trades, ${duplicates}`);
 
     await pool.query(
       `
@@ -62,6 +77,15 @@ async function pullTrades(jobId) {
     );
 
     console.log(`Trade pull completed, Job Id: ${jobId}`);
+
+    io.emit("PULL_COMPLETED", {
+      jobId,
+      status: "COMPLETED",
+      tradesReceived: trades.length,
+      newTrades,
+      duplicates,
+    });
+
   } catch (error) {
     console.error(`Trade pull Failed for job ID: ${jobId}`, error.message);
     await pool.query(
@@ -74,6 +98,12 @@ async function pullTrades(jobId) {
             `,
       ["FAILED", error.message, jobId],
     );
+
+    io.emit("PULL_FAILED", {
+      jobId,
+      status: "FAILED",
+      error: error.message,
+    });
   }
 }
 

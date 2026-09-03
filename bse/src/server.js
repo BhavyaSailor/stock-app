@@ -1,7 +1,7 @@
 require("dotenv").config();
 
 const express = require("express");
-const { getTrades, generateTrades } = require("../src/data/generateTrades");
+const { getTrades, addNewTrades } = require("../src/data/generateTrades");
 const app = express();
 
 const PORT = process.env.PORT || 4000;
@@ -16,23 +16,32 @@ app.get("/", (req, res) => {
 });
 
 app.get("/getTrades", async (req, res) => {
-  const count = Number(req.query.count) || 5000;
 
-  console.log(`BSE pull started: generating ${count} trades`);
+    const newTrades =
+        Number(req.query.newTrades) || 1000;
 
-  const trades = generateTrades(count);
+    console.log(
+        `BSE pull requested. Adding ${newTrades} new trades.`
+    );
 
-  console.log(`Waiting ${BSE_DELAY_SECONDS} seconds before responding...`);
+    addNewTrades(newTrades);
 
-  await delay(BSE_DELAY_SECONDS * 1000);
+    const trades = getTrades();
 
-  console.log("BSE pull completed");
-  
+    console.log(
+        `BSE currently has ${trades.length} total trades.`
+    );
 
-  res.json({
-    count: trades.length,
-    trades: trades,
-  });
+    console.log(
+        `Waiting ${BSE_DELAY_SECONDS} seconds before responding...`
+    );
+
+    await delay(BSE_DELAY_SECONDS * 1000);
+
+    res.json({
+        count: trades.length,
+        trades: trades
+    });
 });
 app.listen(PORT, () => {
   console.log("====================================");
