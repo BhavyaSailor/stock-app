@@ -1,3 +1,6 @@
+const fs= require("fs");
+const path = require("path");
+
 const clients = [
   "Client_A",
   "Client_B",
@@ -21,7 +24,46 @@ const symbols = [
   "AXISBANK",
   "LT",
 ];
-const tradeStore = [];
+
+const dataDirectory = path.join(__dirname, "../../data");
+
+const dataFile = path.join(
+    dataDirectory,
+    "trades.json"
+);
+
+// Make sure data directory exists
+if (!fs.existsSync(dataDirectory)) {
+    fs.mkdirSync(dataDirectory, {
+        recursive: true
+    });
+}
+
+// Create file if it doesn't exist
+if (!fs.existsSync(dataFile)) {
+    fs.writeFileSync(
+        dataFile,
+        JSON.stringify([], null, 2)
+    );
+}
+
+function loadTrades() {
+
+    const data = fs.readFileSync(
+        dataFile,
+        "utf-8"
+    );
+
+    return JSON.parse(data);
+}
+
+function saveTrades(trades) {
+
+    fs.writeFileSync(
+        dataFile,
+        JSON.stringify(trades, null, 2)
+    );
+}
 
 function randomItem(array) {
   return array[Math.floor(Math.random() * array.length)];
@@ -54,23 +96,44 @@ function createTrade(index) {
     timestamp: generateTimestamp(),
   };
 }
-function addNewTrades(count = 1000) {
-  const startingId = tradeStore.length + 1;
 
-  for (let i = 0; i < count; i++) {
-    const trade = createTrade(startingId + i);
+function generateNewTrades(count = 1000) {
 
-    tradeStore.push(trade);
-  }
+    const existingTrades = loadTrades();
 
-  return tradeStore;
+    const startingId =
+        existingTrades.length + 1;
+
+    const newTrades = [];
+
+    for (let i = 0; i < count; i++) {
+
+        const trade = createTrade(
+            startingId + i
+        );
+
+        newTrades.push(trade);
+    }
+
+    // Save complete history
+    const updatedTrades = [
+        ...existingTrades,
+        ...newTrades
+    ];
+
+    saveTrades(updatedTrades);
+
+    return newTrades;
 }
 
-function getTrades() {
-  return tradeStore;
+
+function getAllTrades() {
+
+    return loadTrades();
 }
+
 
 module.exports = {
-  addNewTrades,
-  getTrades
+  generateNewTrades,
+  getAllTrades
 };
