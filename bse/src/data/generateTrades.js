@@ -1,4 +1,4 @@
-const fs= require("fs");
+const fs = require("fs");
 const path = require("path");
 
 const clients = [
@@ -27,42 +27,28 @@ const symbols = [
 
 const dataDirectory = path.join(__dirname, "../../data");
 
-const dataFile = path.join(
-    dataDirectory,
-    "trades.json"
-);
+const dataFile = path.join(dataDirectory, "trades.json");
 
 // Make sure data directory exists
 if (!fs.existsSync(dataDirectory)) {
-    fs.mkdirSync(dataDirectory, {
-        recursive: true
-    });
+  fs.mkdirSync(dataDirectory, {
+    recursive: true,
+  });
 }
 
 // Create file if it doesn't exist
 if (!fs.existsSync(dataFile)) {
-    fs.writeFileSync(
-        dataFile,
-        JSON.stringify([], null, 2)
-    );
+  fs.writeFileSync(dataFile, JSON.stringify([], null, 2));
 }
 
 function loadTrades() {
+  const data = fs.readFileSync(dataFile, "utf-8");
 
-    const data = fs.readFileSync(
-        dataFile,
-        "utf-8"
-    );
-
-    return JSON.parse(data);
+  return JSON.parse(data);
 }
 
 function saveTrades(trades) {
-
-    fs.writeFileSync(
-        dataFile,
-        JSON.stringify(trades, null, 2)
-    );
+  fs.writeFileSync(dataFile, JSON.stringify(trades, null, 2));
 }
 
 function randomItem(array) {
@@ -98,42 +84,43 @@ function createTrade(index) {
 }
 
 function generateNewTrades(count = 1000) {
+  const existingTrades = loadTrades();
 
-    const existingTrades = loadTrades();
+  const startingId = existingTrades.length + 1;
 
-    const startingId =
-        existingTrades.length + 1;
+  const newTrades = [];
 
-    const newTrades = [];
+  for (let i = 0; i < count; i++) {
+    const trade = createTrade(startingId + i);
 
-    for (let i = 0; i < count; i++) {
+    newTrades.push(trade);
+  }
 
-        const trade = createTrade(
-            startingId + i
-        );
+  // Save complete history
+  const updatedTrades = [...existingTrades, ...newTrades];
 
-        newTrades.push(trade);
-    }
+  saveTrades(updatedTrades);
 
-    // Save complete history
-    const updatedTrades = [
-        ...existingTrades,
-        ...newTrades
-    ];
-
-    saveTrades(updatedTrades);
-
-    return newTrades;
+  return newTrades;
 }
 
+function getTradesAfter(tradeId) {
+  const trades = loadTrades();
 
-function getAllTrades() {
+  if (!tradeId) {
+    return trades;
+  }
 
-    return loadTrades();
+  const index = trades.findIndex((trade) => trade.tradeId === tradeId);
+
+  if (index === -1) {
+    return [];
+  }
+
+  return trades.slice(index + 1);
 }
-
 
 module.exports = {
   generateNewTrades,
-  getAllTrades
+  getTradesAfter,
 };

@@ -77,6 +77,7 @@ async function pullTrades(jobId, io) {
     );
 
     console.log(`Trade pull completed, Job Id: ${jobId}`);
+    console.log("...........................")
 
     io.emit("PULL_COMPLETED", {
       jobId,

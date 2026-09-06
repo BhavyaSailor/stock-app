@@ -2,11 +2,12 @@ require("dotenv").config();
 
 const express = require("express");
 const {
+  getTradesAfter,
   generateNewTrades,
-  addNewTrades,
 } = require("../src/data/generateTrades");
-const app = express();
 
+const app = express();
+app.use(express.json());
 const PORT = process.env.PORT || 4000;
 const BSE_DELAY_SECONDS = Number(process.env.BSE_DELAY_SECONDS) || 0;
 
@@ -18,11 +19,11 @@ app.get("/", (req, res) => {
   res.json({ message: "server started" });
 });
 
-app.get("/getTrades", async (req, res) => {
+app.post("/generateTrades", async (req, res) => {
   try {
-    const count = Number(req.query.newTrades) || 1000;
+    const count = Number(req.body?.count) || Number(req.query.count) || 1000;
 
-    console.log(`BSE pull requested. Generating ${count} new trades.`);
+    console.log(`Generating ${count} new trades...`);
 
     const newTrades = generateNewTrades(count);
 
@@ -32,20 +33,42 @@ app.get("/getTrades", async (req, res) => {
 
     console.log(`Last trade: ${newTrades[newTrades.length - 1].tradeId}`);
 
+    res.json({
+      count: newTrades.length,
+      trades: newTrades,
+    });
+  } catch (error) {
+    console.error("Error generating trades:", error);
+
+    res.status(500).json({
+      message: "Failed to generate trades",
+    });
+  }
+});
+
+app.get("/getTrades", async (req, res) => {
+  try {
+    const after = req.query.after;
+
+    console.log(`BSE pull requested. After: ${after || "START / 0"}`);
+
+    const trades = getTradesAfter(after);
+
     console.log(`Waiting ${BSE_DELAY_SECONDS} seconds before responding...`);
+    console.log(`Found ${trades.length} trades to return.`);
+console.log("...............")
 
     await delay(BSE_DELAY_SECONDS * 1000);
 
     res.json({
-      count: newTrades.length,
-
-      trades: newTrades,
+      count: trades.length,
+      trades: trades,
     });
   } catch (error) {
-    console.error("BSE error:", error);
+    console.error("Error fetching trades:", error);
 
     res.status(500).json({
-      message: "Failed to generate trades",
+      message: "Failed to fetch trades",
     });
   }
 });
