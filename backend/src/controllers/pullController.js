@@ -13,7 +13,14 @@ async function startPull(req, res) {
     );
 
     const job = result.rows[0];
-    pullTrades(job.id);
+
+    const io = req.app.get("io");
+    io.emit("PULL_STARTED", {
+      jobId: job.id,
+      status: "PENDING",
+    });
+
+    pullTrades(job.id, io);
     res.status(202).json({
       message: " Trade pull started",
       job,
@@ -26,5 +33,5 @@ async function startPull(req, res) {
   }
 }
 module.exports = {
-    startPull
-}
+  startPull,
+};

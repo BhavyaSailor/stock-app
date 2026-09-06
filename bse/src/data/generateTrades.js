@@ -1,3 +1,6 @@
+const fs = require("fs");
+const path = require("path");
+
 const clients = [
   "Client_A",
   "Client_B",
@@ -22,6 +25,32 @@ const symbols = [
   "LT",
 ];
 
+const dataDirectory = path.join(__dirname, "../../data");
+
+const dataFile = path.join(dataDirectory, "trades.json");
+
+// Make sure data directory exists
+if (!fs.existsSync(dataDirectory)) {
+  fs.mkdirSync(dataDirectory, {
+    recursive: true,
+  });
+}
+
+// Create file if it doesn't exist
+if (!fs.existsSync(dataFile)) {
+  fs.writeFileSync(dataFile, JSON.stringify([], null, 2));
+}
+
+function loadTrades() {
+  const data = fs.readFileSync(dataFile, "utf-8");
+
+  return JSON.parse(data);
+}
+
+function saveTrades(trades) {
+  fs.writeFileSync(dataFile, JSON.stringify(trades, null, 2));
+}
+
 function randomItem(array) {
   return array[Math.floor(Math.random() * array.length)];
 }
@@ -43,7 +72,7 @@ function generateTimestamp() {
 
   return new Date(time).toISOString();
 }
-function generateTrade(index) {
+function createTrade(index) {
   return {
     tradeId: `TRD${String(index).padStart(5, "0")}`,
     client: randomItem(clients),
@@ -53,16 +82,45 @@ function generateTrade(index) {
     timestamp: generateTimestamp(),
   };
 }
-function generateTrades(count = 5000) {
-  const trades = [];
 
-  for (let i = 1; i <= count; i++) {
-    trades.push(generateTrade(i));
+function generateNewTrades(count = 1000) {
+  const existingTrades = loadTrades();
+
+  const startingId = existingTrades.length + 1;
+
+  const newTrades = [];
+
+  for (let i = 0; i < count; i++) {
+    const trade = createTrade(startingId + i);
+
+    newTrades.push(trade);
   }
 
-  return trades;
+  // Save complete history
+  const updatedTrades = [...existingTrades, ...newTrades];
+
+  saveTrades(updatedTrades);
+
+  return newTrades;
+}
+
+function getTradesAfter(tradeId) {
+  const trades = loadTrades();
+
+  if (!tradeId) {
+    return trades;
+  }
+
+  const index = trades.findIndex((trade) => trade.tradeId === tradeId);
+
+  if (index === -1) {
+    return [];
+  }
+
+  return trades.slice(index + 1);
 }
 
 module.exports = {
-  generateTrades,
+  generateNewTrades,
+  getTradesAfter,
 };

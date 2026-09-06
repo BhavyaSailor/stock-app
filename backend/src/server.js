@@ -2,12 +2,25 @@ require("dotenv").config();
 
 const express = require("express");
 const cors = require("cors");
+const http = require("http");
+const { Server } = require("socket.io");
 const pool = require("./config/db");
+
 const tradeRoutes = require("./routes/tradeRoutes");
 const pullRoutes = require("./routes/pullRoutes");
 
 const app = express();
+
 const PORT = process.env.PORT || 3000;
+
+const server = http.createServer(app);
+
+const io = new Server(server, {
+  cors: {
+    origin: "*",
+  },
+});
+app.set("io", io);
 
 app.use(cors());
 app.use(express.json());
@@ -52,9 +65,19 @@ app.get("/health/db", async (req, res) => {
   }
 });
 
+//get
 app.use("/api/trades", tradeRoutes);
+
+//post
 app.use("/api/pulls", pullRoutes);
 
-app.listen(PORT, () => {
-  console.log(`Trade ingestion running on port ${PORT}`);
+io.on("connection", (socket) => {
+  console.log(`Websocket client connected: ${socket.id}`);
+  socket.on("disconnect", () => {
+    console.log(`Websocket client disconnected: ${socket.id}`);
+  });
+});
+
+server.listen(PORT, () => {
+  console.log(`Backend running on port ${PORT}`);
 });
