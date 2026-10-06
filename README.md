@@ -38,7 +38,7 @@ The project contains three application components:
                      └────────────────┘   └────────────────┘
 ```
 
-See [`docs/architecture.md`](docs/architecture.md) for the detailed flow
+See [`architecture.md`](docs/architecture.md) for the detailed flow
 and design decisions.
 
 ## Tech Stack
