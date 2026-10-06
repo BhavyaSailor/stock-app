@@ -1,7 +1,27 @@
 import { useEffect, useState } from "react";
+
 import { getTrades, startPull } from "../services/api";
 import { socket } from "../services/socket";
+
 import TradeTable from "../components/TradeTable";
+
+import StatCard from "../components/StatCard";
+import ConnectionStatus from "../components/ConnectionStatus";
+import PullButton from "../components/PullButton";
+
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+
+import {
+  Activity,
+  Database,
+  Download,
+  BriefcaseBusiness,
+} from "lucide-react";
 
 function Dashboard() {
   const [trades, setTrades] = useState([]);
@@ -10,9 +30,13 @@ function Dashboard() {
   const [pulling, setPulling] = useState(false);
   const [pullStatus, setPullStatus] = useState("IDLE");
   const [lastPull, setLastPull] = useState(null);
-
+  const [connected, setConnected] = useState(socket.connected);
   const [error, setError] = useState(null);
-
+<div className="flex min-h-screen items-center justify-center bg-slate-950">
+  <h1 className="text-5xl font-bold text-white">
+    Tailwind Works!
+  </h1>
+</div>
   // Initial loading of trades
   useEffect(() => {
     async function loadTrades() {
@@ -34,6 +58,12 @@ function Dashboard() {
   useEffect(() => {
     function handleConnect() {
       console.log("Dashboard socket connected");
+      setConnected(true);
+    }
+
+    function handleDisconnect() {
+      console.log("Dashboard socket disconnected");
+      setConnected(false);
     }
     function handlePullStarted(data) {
       console.log("Pull started:", data);
@@ -74,6 +104,7 @@ function Dashboard() {
     }
 
     socket.on("connect", handleConnect);
+    socket.on("disconnect", handleDisconnect);
     socket.on("PULL_STARTED", handlePullStarted);
     socket.on("PULL_RUNNING", handlePullRunning);
     socket.on("PULL_COMPLETED", handlePullCompleted);
@@ -81,6 +112,7 @@ function Dashboard() {
 
     return () => {
       socket.off("connect", handleConnect);
+      socket.off("disconnect", handleDisconnect);
       socket.off("PULL_STARTED", handlePullStarted);
       socket.off("PULL_RUNNING", handlePullRunning);
       socket.off("PULL_COMPLETED", handlePullCompleted);
@@ -111,46 +143,123 @@ function Dashboard() {
   }
 
   return (
-    <div>
-      <h1>Trade Dashboard</h1>
+  <div className="min-h-screen bg-muted/40">
+    <div className="container mx-auto max-w-7xl px-6 py-8">
 
-      <div>
-        <p>
-          Total Trades: <strong>{trades.length}</strong>
-        </p>
+      {/* Header */}
+      <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+        <div>
+          <h1 className="text-3xl font-bold tracking-tight">
+            Trade Dashboard
+          </h1>
 
-        <p>
-          Pull Status: <strong>{pullStatus}</strong>
-        </p>
+          <p className="text-muted-foreground mt-1">
+            BSE trade ingestion and monitoring
+          </p>
+        </div>
 
-        <button onClick={handlePull} disabled={pulling}>
-          {pulling ? "Pulling Trades..." : "Pull Trades"}
-        </button>
+        <div className="flex items-center gap-3">
+          <ConnectionStatus connected={connected} />
+
+          <PullButton
+            pulling={pulling}
+            onClick={handlePull}
+          />
+        </div>
       </div>
 
+      {/* Statistics */}
+      <div className="grid gap-4 mt-8 md:grid-cols-2 lg:grid-cols-4">
+
+        <StatCard
+          title="Total Trades"
+          value={trades.length}
+          description="Trades stored in database"
+          icon={Database}
+        />
+
+        <StatCard
+          title="New Trades"
+          value={lastPull?.newTrades ?? 0}
+          description="Added during last pull"
+          icon={Download}
+        />
+
+        <StatCard
+          title="Pull Status"
+          value={pullStatus}
+          description="Current ingestion status"
+          icon={Activity}
+        />
+
+        <StatCard
+          title="Last Job"
+          value={lastPull?.jobId ? `#${lastPull.jobId}` : "—"}
+          description="Most recent pull job"
+          icon={BriefcaseBusiness}
+        />
+
+      </div>
+
+      {/* Last Pull */}
       {lastPull && (
-        <div>
-          <h3>Last Pull</h3>
+        <Card className="mt-6">
+          <CardHeader>
+            <CardTitle>Last Pull Details</CardTitle>
+          </CardHeader>
 
-          <p>Job ID: {lastPull.jobId}</p>
+          <CardContent>
+            <div className="grid gap-6 md:grid-cols-3">
 
-          {lastPull.tradesReceived !== undefined && (
-            <p>Trades Received: {lastPull.tradesReceived}</p>
-          )}
+              <div>
+                <p className="text-sm text-muted-foreground">
+                  Trades Received
+                </p>
 
-          {lastPull.newTrades !== undefined && (
-            <p>New Trades: {lastPull.newTrades}</p>
-          )}
+                <p className="text-2xl font-bold mt-1">
+                  {lastPull.tradesReceived ?? 0}
+                </p>
+              </div>
 
-          {lastPull.duplicates !== undefined && (
-            <p>Duplicates: {lastPull.duplicates}</p>
-          )}
-        </div>
+              <div>
+                <p className="text-sm text-muted-foreground">
+                  New Trades
+                </p>
+
+                <p className="text-2xl font-bold mt-1">
+                  {lastPull.newTrades ?? 0}
+                </p>
+              </div>
+
+              <div>
+                <p className="text-sm text-muted-foreground">
+                  Duplicates
+                </p>
+
+                <p className="text-2xl font-bold mt-1">
+                  {lastPull.duplicates ?? 0}
+                </p>
+              </div>
+
+            </div>
+          </CardContent>
+        </Card>
       )}
 
-      <TradeTable trades={trades} />
+      {/* Trades */}
+      <Card className="mt-6">
+        <CardHeader>
+          <CardTitle>Recent Trades</CardTitle>
+        </CardHeader>
+
+        <CardContent>
+          <TradeTable trades={trades} />
+        </CardContent>
+      </Card>
+
     </div>
-  );
+  </div>
+);
 }
 
 export default Dashboard;

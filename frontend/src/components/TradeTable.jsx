@@ -1,7 +1,7 @@
 function TradeTable({ trades }) {
   return (
     <div>
-      <h2>Trades</h2>
+      <h2 className="bg-blue-500 text-white p-2">Trades</h2>
 
       <table>
         <thead>
