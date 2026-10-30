@@ -33,7 +33,7 @@ The project contains three application components:
                             │                     │
                             ▼                     ▼
                      ┌────────────────┐   ┌────────────────┐
-                     │   Mock BSE API │   │   PostgreSQL   │
+                     │   Mock BSE API │───│   PostgreSQL   │
                      │     :4000      │   │     Database   │
                      └────────────────┘   └────────────────┘
 ```

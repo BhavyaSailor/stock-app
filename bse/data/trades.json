@@ -18638,5 +18638,1605 @@
     "quantity": 80,
     "price": 425.03,
     "timestamp": "2026-10-06T06:19:03.116Z"
+  },
+  {
+    "tradeId": "TRD02331",
+    "client": "Client_F",
+    "symbol": "AXISBANK",
+    "quantity": 900,
+    "price": 806.26,
+    "timestamp": "2026-10-06T09:57:34.209Z"
+  },
+  {
+    "tradeId": "TRD02332",
+    "client": "Client_B",
+    "symbol": "SBIN",
+    "quantity": 470,
+    "price": 1173.63,
+    "timestamp": "2026-10-06T08:42:31.513Z"
+  },
+  {
+    "tradeId": "TRD02333",
+    "client": "Client_C",
+    "symbol": "HDFCBANK",
+    "quantity": 510,
+    "price": 4054.95,
+    "timestamp": "2026-10-06T06:20:16.454Z"
+  },
+  {
+    "tradeId": "TRD02334",
+    "client": "Client_D",
+    "symbol": "RELIANCE",
+    "quantity": 150,
+    "price": 2597.45,
+    "timestamp": "2026-10-06T06:25:35.376Z"
+  },
+  {
+    "tradeId": "TRD02335",
+    "client": "Client_E",
+    "symbol": "TCS",
+    "quantity": 850,
+    "price": 3952.28,
+    "timestamp": "2026-10-06T07:56:12.361Z"
+  },
+  {
+    "tradeId": "TRD02336",
+    "client": "Client_G",
+    "symbol": "LT",
+    "quantity": 240,
+    "price": 3607.94,
+    "timestamp": "2026-10-06T07:08:29.866Z"
+  },
+  {
+    "tradeId": "TRD02337",
+    "client": "Client_D",
+    "symbol": "RELIANCE",
+    "quantity": 1000,
+    "price": 2604.21,
+    "timestamp": "2026-10-06T05:54:46.890Z"
+  },
+  {
+    "tradeId": "TRD02338",
+    "client": "Client_B",
+    "symbol": "INFY",
+    "quantity": 30,
+    "price": 4137.77,
+    "timestamp": "2026-10-06T05:22:34.856Z"
+  },
+  {
+    "tradeId": "TRD02339",
+    "client": "Client_G",
+    "symbol": "LT",
+    "quantity": 980,
+    "price": 4182.27,
+    "timestamp": "2026-10-06T09:05:56.938Z"
+  },
+  {
+    "tradeId": "TRD02340",
+    "client": "Client_G",
+    "symbol": "AXISBANK",
+    "quantity": 750,
+    "price": 536.3,
+    "timestamp": "2026-10-06T09:03:24.836Z"
+  },
+  {
+    "tradeId": "TRD02341",
+    "client": "Client_A",
+    "symbol": "WIPRO",
+    "quantity": 90,
+    "price": 2613.51,
+    "timestamp": "2026-10-06T09:24:47.442Z"
+  },
+  {
+    "tradeId": "TRD02342",
+    "client": "Client_G",
+    "symbol": "SBIN",
+    "quantity": 410,
+    "price": 4467.6,
+    "timestamp": "2026-10-06T09:36:11.947Z"
+  },
+  {
+    "tradeId": "TRD02343",
+    "client": "Client_G",
+    "symbol": "TCS",
+    "quantity": 940,
+    "price": 4616.89,
+    "timestamp": "2026-10-06T07:42:49.623Z"
+  },
+  {
+    "tradeId": "TRD02344",
+    "client": "Client_G",
+    "symbol": "LT",
+    "quantity": 670,
+    "price": 202.1,
+    "timestamp": "2026-10-06T04:11:25.860Z"
+  },
+  {
+    "tradeId": "TRD02345",
+    "client": "Client_G",
+    "symbol": "HDFCBANK",
+    "quantity": 930,
+    "price": 3551.27,
+    "timestamp": "2026-10-06T09:00:13.485Z"
+  },
+  {
+    "tradeId": "TRD02346",
+    "client": "Client_H",
+    "symbol": "ICICIBANK",
+    "quantity": 480,
+    "price": 3439.9,
+    "timestamp": "2026-10-06T06:04:59.111Z"
+  },
+  {
+    "tradeId": "TRD02347",
+    "client": "Client_H",
+    "symbol": "SBIN",
+    "quantity": 770,
+    "price": 3854.76,
+    "timestamp": "2026-10-06T08:39:07.298Z"
+  },
+  {
+    "tradeId": "TRD02348",
+    "client": "Client_D",
+    "symbol": "TCS",
+    "quantity": 80,
+    "price": 3606.68,
+    "timestamp": "2026-10-06T05:31:07.314Z"
+  },
+  {
+    "tradeId": "TRD02349",
+    "client": "Client_E",
+    "symbol": "SBIN",
+    "quantity": 180,
+    "price": 188.19,
+    "timestamp": "2026-10-06T08:47:38.801Z"
+  },
+  {
+    "tradeId": "TRD02350",
+    "client": "Client_B",
+    "symbol": "HDFCBANK",
+    "quantity": 940,
+    "price": 2884.66,
+    "timestamp": "2026-10-06T09:55:38.797Z"
+  },
+  {
+    "tradeId": "TRD02351",
+    "client": "Client_G",
+    "symbol": "HDFCBANK",
+    "quantity": 150,
+    "price": 3415.09,
+    "timestamp": "2026-10-06T06:09:18.159Z"
+  },
+  {
+    "tradeId": "TRD02352",
+    "client": "Client_A",
+    "symbol": "RELIANCE",
+    "quantity": 650,
+    "price": 4651.07,
+    "timestamp": "2026-10-06T03:47:33.385Z"
+  },
+  {
+    "tradeId": "TRD02353",
+    "client": "Client_B",
+    "symbol": "HDFCBANK",
+    "quantity": 480,
+    "price": 2271.59,
+    "timestamp": "2026-10-06T03:58:05.841Z"
+  },
+  {
+    "tradeId": "TRD02354",
+    "client": "Client_F",
+    "symbol": "ICICIBANK",
+    "quantity": 240,
+    "price": 4514.9,
+    "timestamp": "2026-10-06T09:03:55.788Z"
+  },
+  {
+    "tradeId": "TRD02355",
+    "client": "Client_A",
+    "symbol": "LT",
+    "quantity": 140,
+    "price": 2542.87,
+    "timestamp": "2026-10-06T06:58:54.049Z"
+  },
+  {
+    "tradeId": "TRD02356",
+    "client": "Client_C",
+    "symbol": "RELIANCE",
+    "quantity": 190,
+    "price": 2409.06,
+    "timestamp": "2026-10-06T06:54:49.372Z"
+  },
+  {
+    "tradeId": "TRD02357",
+    "client": "Client_D",
+    "symbol": "ICICIBANK",
+    "quantity": 890,
+    "price": 2730.17,
+    "timestamp": "2026-10-06T09:58:22.170Z"
+  },
+  {
+    "tradeId": "TRD02358",
+    "client": "Client_D",
+    "symbol": "SBIN",
+    "quantity": 480,
+    "price": 1446.95,
+    "timestamp": "2026-10-06T04:54:59.864Z"
+  },
+  {
+    "tradeId": "TRD02359",
+    "client": "Client_B",
+    "symbol": "ITC",
+    "quantity": 810,
+    "price": 4633.27,
+    "timestamp": "2026-10-06T04:43:00.021Z"
+  },
+  {
+    "tradeId": "TRD02360",
+    "client": "Client_H",
+    "symbol": "LT",
+    "quantity": 600,
+    "price": 3934.3,
+    "timestamp": "2026-10-06T04:30:25.237Z"
+  },
+  {
+    "tradeId": "TRD02361",
+    "client": "Client_G",
+    "symbol": "ITC",
+    "quantity": 140,
+    "price": 1705.45,
+    "timestamp": "2026-10-06T07:47:16.553Z"
+  },
+  {
+    "tradeId": "TRD02362",
+    "client": "Client_C",
+    "symbol": "RELIANCE",
+    "quantity": 800,
+    "price": 2381.15,
+    "timestamp": "2026-10-06T07:50:36.678Z"
+  },
+  {
+    "tradeId": "TRD02363",
+    "client": "Client_G",
+    "symbol": "AXISBANK",
+    "quantity": 540,
+    "price": 3192.75,
+    "timestamp": "2026-10-06T09:55:00.522Z"
+  },
+  {
+    "tradeId": "TRD02364",
+    "client": "Client_E",
+    "symbol": "AXISBANK",
+    "quantity": 550,
+    "price": 2019.11,
+    "timestamp": "2026-10-06T06:23:10.399Z"
+  },
+  {
+    "tradeId": "TRD02365",
+    "client": "Client_H",
+    "symbol": "AXISBANK",
+    "quantity": 990,
+    "price": 179.95,
+    "timestamp": "2026-10-06T05:49:46.106Z"
+  },
+  {
+    "tradeId": "TRD02366",
+    "client": "Client_C",
+    "symbol": "TCS",
+    "quantity": 1000,
+    "price": 2829.63,
+    "timestamp": "2026-10-06T04:42:19.510Z"
+  },
+  {
+    "tradeId": "TRD02367",
+    "client": "Client_F",
+    "symbol": "ITC",
+    "quantity": 940,
+    "price": 2763.08,
+    "timestamp": "2026-10-06T03:54:14.735Z"
+  },
+  {
+    "tradeId": "TRD02368",
+    "client": "Client_B",
+    "symbol": "ITC",
+    "quantity": 720,
+    "price": 2136.19,
+    "timestamp": "2026-10-06T09:53:02.941Z"
+  },
+  {
+    "tradeId": "TRD02369",
+    "client": "Client_A",
+    "symbol": "LT",
+    "quantity": 850,
+    "price": 1755.79,
+    "timestamp": "2026-10-06T04:31:43.631Z"
+  },
+  {
+    "tradeId": "TRD02370",
+    "client": "Client_F",
+    "symbol": "INFY",
+    "quantity": 1000,
+    "price": 115.4,
+    "timestamp": "2026-10-06T05:08:30.982Z"
+  },
+  {
+    "tradeId": "TRD02371",
+    "client": "Client_H",
+    "symbol": "ITC",
+    "quantity": 150,
+    "price": 4704.15,
+    "timestamp": "2026-10-06T08:22:42.728Z"
+  },
+  {
+    "tradeId": "TRD02372",
+    "client": "Client_B",
+    "symbol": "AXISBANK",
+    "quantity": 340,
+    "price": 1960.4,
+    "timestamp": "2026-10-06T06:15:00.373Z"
+  },
+  {
+    "tradeId": "TRD02373",
+    "client": "Client_A",
+    "symbol": "SBIN",
+    "quantity": 900,
+    "price": 894.18,
+    "timestamp": "2026-10-06T05:12:21.173Z"
+  },
+  {
+    "tradeId": "TRD02374",
+    "client": "Client_G",
+    "symbol": "TCS",
+    "quantity": 730,
+    "price": 2491.77,
+    "timestamp": "2026-10-06T08:51:54.985Z"
+  },
+  {
+    "tradeId": "TRD02375",
+    "client": "Client_E",
+    "symbol": "SBIN",
+    "quantity": 690,
+    "price": 2461.64,
+    "timestamp": "2026-10-06T07:42:43.723Z"
+  },
+  {
+    "tradeId": "TRD02376",
+    "client": "Client_D",
+    "symbol": "ITC",
+    "quantity": 580,
+    "price": 1729.96,
+    "timestamp": "2026-10-06T05:16:35.122Z"
+  },
+  {
+    "tradeId": "TRD02377",
+    "client": "Client_D",
+    "symbol": "TCS",
+    "quantity": 400,
+    "price": 2283.87,
+    "timestamp": "2026-10-06T04:24:55.124Z"
+  },
+  {
+    "tradeId": "TRD02378",
+    "client": "Client_E",
+    "symbol": "INFY",
+    "quantity": 670,
+    "price": 1124.78,
+    "timestamp": "2026-10-06T07:06:58.660Z"
+  },
+  {
+    "tradeId": "TRD02379",
+    "client": "Client_H",
+    "symbol": "ICICIBANK",
+    "quantity": 920,
+    "price": 3147.37,
+    "timestamp": "2026-10-06T04:27:27.965Z"
+  },
+  {
+    "tradeId": "TRD02380",
+    "client": "Client_B",
+    "symbol": "SBIN",
+    "quantity": 470,
+    "price": 2581.85,
+    "timestamp": "2026-10-06T08:37:34.020Z"
+  },
+  {
+    "tradeId": "TRD02381",
+    "client": "Client_A",
+    "symbol": "INFY",
+    "quantity": 840,
+    "price": 1605.3,
+    "timestamp": "2026-10-06T07:00:51.627Z"
+  },
+  {
+    "tradeId": "TRD02382",
+    "client": "Client_C",
+    "symbol": "INFY",
+    "quantity": 380,
+    "price": 712.95,
+    "timestamp": "2026-10-06T07:25:56.324Z"
+  },
+  {
+    "tradeId": "TRD02383",
+    "client": "Client_H",
+    "symbol": "ICICIBANK",
+    "quantity": 640,
+    "price": 4653.18,
+    "timestamp": "2026-10-06T05:07:36.189Z"
+  },
+  {
+    "tradeId": "TRD02384",
+    "client": "Client_B",
+    "symbol": "ITC",
+    "quantity": 160,
+    "price": 761.7,
+    "timestamp": "2026-10-06T06:01:14.392Z"
+  },
+  {
+    "tradeId": "TRD02385",
+    "client": "Client_H",
+    "symbol": "ICICIBANK",
+    "quantity": 420,
+    "price": 648.84,
+    "timestamp": "2026-10-06T05:11:25.083Z"
+  },
+  {
+    "tradeId": "TRD02386",
+    "client": "Client_D",
+    "symbol": "ITC",
+    "quantity": 940,
+    "price": 3514.67,
+    "timestamp": "2026-10-06T08:52:21.950Z"
+  },
+  {
+    "tradeId": "TRD02387",
+    "client": "Client_H",
+    "symbol": "SBIN",
+    "quantity": 860,
+    "price": 3885.36,
+    "timestamp": "2026-10-06T08:46:49.148Z"
+  },
+  {
+    "tradeId": "TRD02388",
+    "client": "Client_G",
+    "symbol": "WIPRO",
+    "quantity": 930,
+    "price": 3712,
+    "timestamp": "2026-10-06T08:16:40.349Z"
+  },
+  {
+    "tradeId": "TRD02389",
+    "client": "Client_H",
+    "symbol": "ICICIBANK",
+    "quantity": 790,
+    "price": 377.59,
+    "timestamp": "2026-10-06T06:31:38.729Z"
+  },
+  {
+    "tradeId": "TRD02390",
+    "client": "Client_G",
+    "symbol": "WIPRO",
+    "quantity": 690,
+    "price": 353.45,
+    "timestamp": "2026-10-06T06:08:23.091Z"
+  },
+  {
+    "tradeId": "TRD02391",
+    "client": "Client_E",
+    "symbol": "ITC",
+    "quantity": 160,
+    "price": 553.02,
+    "timestamp": "2026-10-06T04:32:09.263Z"
+  },
+  {
+    "tradeId": "TRD02392",
+    "client": "Client_A",
+    "symbol": "SBIN",
+    "quantity": 370,
+    "price": 4798.98,
+    "timestamp": "2026-10-06T06:16:22.997Z"
+  },
+  {
+    "tradeId": "TRD02393",
+    "client": "Client_A",
+    "symbol": "WIPRO",
+    "quantity": 300,
+    "price": 2086.27,
+    "timestamp": "2026-10-06T08:45:55.938Z"
+  },
+  {
+    "tradeId": "TRD02394",
+    "client": "Client_E",
+    "symbol": "AXISBANK",
+    "quantity": 970,
+    "price": 3734.62,
+    "timestamp": "2026-10-06T06:06:35.067Z"
+  },
+  {
+    "tradeId": "TRD02395",
+    "client": "Client_G",
+    "symbol": "LT",
+    "quantity": 50,
+    "price": 4420,
+    "timestamp": "2026-10-06T06:56:49.461Z"
+  },
+  {
+    "tradeId": "TRD02396",
+    "client": "Client_H",
+    "symbol": "INFY",
+    "quantity": 80,
+    "price": 3154.78,
+    "timestamp": "2026-10-06T09:17:05.093Z"
+  },
+  {
+    "tradeId": "TRD02397",
+    "client": "Client_H",
+    "symbol": "ITC",
+    "quantity": 480,
+    "price": 1758.57,
+    "timestamp": "2026-10-06T03:57:19.879Z"
+  },
+  {
+    "tradeId": "TRD02398",
+    "client": "Client_A",
+    "symbol": "HDFCBANK",
+    "quantity": 580,
+    "price": 4499.55,
+    "timestamp": "2026-10-06T04:51:40.376Z"
+  },
+  {
+    "tradeId": "TRD02399",
+    "client": "Client_C",
+    "symbol": "TCS",
+    "quantity": 940,
+    "price": 4129.38,
+    "timestamp": "2026-10-06T04:04:38.622Z"
+  },
+  {
+    "tradeId": "TRD02400",
+    "client": "Client_E",
+    "symbol": "RELIANCE",
+    "quantity": 380,
+    "price": 2956.02,
+    "timestamp": "2026-10-06T06:16:23.474Z"
+  },
+  {
+    "tradeId": "TRD02401",
+    "client": "Client_H",
+    "symbol": "SBIN",
+    "quantity": 510,
+    "price": 3581.19,
+    "timestamp": "2026-10-06T06:48:50.958Z"
+  },
+  {
+    "tradeId": "TRD02402",
+    "client": "Client_E",
+    "symbol": "LT",
+    "quantity": 860,
+    "price": 1444.13,
+    "timestamp": "2026-10-06T04:11:16.561Z"
+  },
+  {
+    "tradeId": "TRD02403",
+    "client": "Client_B",
+    "symbol": "INFY",
+    "quantity": 140,
+    "price": 2351.3,
+    "timestamp": "2026-10-06T05:28:01.679Z"
+  },
+  {
+    "tradeId": "TRD02404",
+    "client": "Client_H",
+    "symbol": "INFY",
+    "quantity": 280,
+    "price": 2038.6,
+    "timestamp": "2026-10-06T08:40:39.234Z"
+  },
+  {
+    "tradeId": "TRD02405",
+    "client": "Client_E",
+    "symbol": "SBIN",
+    "quantity": 750,
+    "price": 1137.74,
+    "timestamp": "2026-10-06T04:29:33.437Z"
+  },
+  {
+    "tradeId": "TRD02406",
+    "client": "Client_H",
+    "symbol": "RELIANCE",
+    "quantity": 310,
+    "price": 1087.81,
+    "timestamp": "2026-10-06T08:57:40.323Z"
+  },
+  {
+    "tradeId": "TRD02407",
+    "client": "Client_B",
+    "symbol": "WIPRO",
+    "quantity": 820,
+    "price": 4206.09,
+    "timestamp": "2026-10-06T04:12:48.851Z"
+  },
+  {
+    "tradeId": "TRD02408",
+    "client": "Client_A",
+    "symbol": "INFY",
+    "quantity": 910,
+    "price": 1595.23,
+    "timestamp": "2026-10-06T07:04:03.568Z"
+  },
+  {
+    "tradeId": "TRD02409",
+    "client": "Client_C",
+    "symbol": "WIPRO",
+    "quantity": 480,
+    "price": 3820.3,
+    "timestamp": "2026-10-06T09:58:23.604Z"
+  },
+  {
+    "tradeId": "TRD02410",
+    "client": "Client_F",
+    "symbol": "LT",
+    "quantity": 490,
+    "price": 1876.72,
+    "timestamp": "2026-10-06T06:50:29.854Z"
+  },
+  {
+    "tradeId": "TRD02411",
+    "client": "Client_D",
+    "symbol": "INFY",
+    "quantity": 920,
+    "price": 490.89,
+    "timestamp": "2026-10-06T05:01:38.362Z"
+  },
+  {
+    "tradeId": "TRD02412",
+    "client": "Client_E",
+    "symbol": "INFY",
+    "quantity": 10,
+    "price": 4343.75,
+    "timestamp": "2026-10-06T07:55:19.481Z"
+  },
+  {
+    "tradeId": "TRD02413",
+    "client": "Client_E",
+    "symbol": "ICICIBANK",
+    "quantity": 960,
+    "price": 3160.37,
+    "timestamp": "2026-10-06T08:37:24.658Z"
+  },
+  {
+    "tradeId": "TRD02414",
+    "client": "Client_F",
+    "symbol": "ICICIBANK",
+    "quantity": 360,
+    "price": 3227.73,
+    "timestamp": "2026-10-06T04:28:42.795Z"
+  },
+  {
+    "tradeId": "TRD02415",
+    "client": "Client_B",
+    "symbol": "WIPRO",
+    "quantity": 80,
+    "price": 1834.35,
+    "timestamp": "2026-10-06T07:06:21.095Z"
+  },
+  {
+    "tradeId": "TRD02416",
+    "client": "Client_F",
+    "symbol": "SBIN",
+    "quantity": 340,
+    "price": 1929.51,
+    "timestamp": "2026-10-06T08:50:29.650Z"
+  },
+  {
+    "tradeId": "TRD02417",
+    "client": "Client_B",
+    "symbol": "ITC",
+    "quantity": 690,
+    "price": 623.41,
+    "timestamp": "2026-10-06T07:47:28.181Z"
+  },
+  {
+    "tradeId": "TRD02418",
+    "client": "Client_C",
+    "symbol": "INFY",
+    "quantity": 230,
+    "price": 1873.83,
+    "timestamp": "2026-10-06T08:13:04.651Z"
+  },
+  {
+    "tradeId": "TRD02419",
+    "client": "Client_A",
+    "symbol": "AXISBANK",
+    "quantity": 700,
+    "price": 3148.05,
+    "timestamp": "2026-10-06T08:49:50.806Z"
+  },
+  {
+    "tradeId": "TRD02420",
+    "client": "Client_C",
+    "symbol": "SBIN",
+    "quantity": 370,
+    "price": 1701.49,
+    "timestamp": "2026-10-06T05:40:24.179Z"
+  },
+  {
+    "tradeId": "TRD02421",
+    "client": "Client_F",
+    "symbol": "RELIANCE",
+    "quantity": 230,
+    "price": 4670.51,
+    "timestamp": "2026-10-06T09:32:20.453Z"
+  },
+  {
+    "tradeId": "TRD02422",
+    "client": "Client_F",
+    "symbol": "ICICIBANK",
+    "quantity": 430,
+    "price": 560.47,
+    "timestamp": "2026-10-06T06:54:06.610Z"
+  },
+  {
+    "tradeId": "TRD02423",
+    "client": "Client_E",
+    "symbol": "TCS",
+    "quantity": 820,
+    "price": 1803.55,
+    "timestamp": "2026-10-06T09:35:22.026Z"
+  },
+  {
+    "tradeId": "TRD02424",
+    "client": "Client_G",
+    "symbol": "AXISBANK",
+    "quantity": 80,
+    "price": 1257.21,
+    "timestamp": "2026-10-06T05:08:47.629Z"
+  },
+  {
+    "tradeId": "TRD02425",
+    "client": "Client_C",
+    "symbol": "ICICIBANK",
+    "quantity": 380,
+    "price": 4305.96,
+    "timestamp": "2026-10-06T04:52:56.685Z"
+  },
+  {
+    "tradeId": "TRD02426",
+    "client": "Client_G",
+    "symbol": "LT",
+    "quantity": 460,
+    "price": 4044.94,
+    "timestamp": "2026-10-06T07:18:49.456Z"
+  },
+  {
+    "tradeId": "TRD02427",
+    "client": "Client_F",
+    "symbol": "TCS",
+    "quantity": 340,
+    "price": 4387.55,
+    "timestamp": "2026-10-06T08:48:16.828Z"
+  },
+  {
+    "tradeId": "TRD02428",
+    "client": "Client_G",
+    "symbol": "RELIANCE",
+    "quantity": 730,
+    "price": 3111.73,
+    "timestamp": "2026-10-06T08:31:33.694Z"
+  },
+  {
+    "tradeId": "TRD02429",
+    "client": "Client_G",
+    "symbol": "AXISBANK",
+    "quantity": 860,
+    "price": 1838.14,
+    "timestamp": "2026-10-06T04:37:31.243Z"
+  },
+  {
+    "tradeId": "TRD02430",
+    "client": "Client_B",
+    "symbol": "SBIN",
+    "quantity": 40,
+    "price": 1846.97,
+    "timestamp": "2026-10-06T07:19:09.464Z"
+  },
+  {
+    "tradeId": "TRD02431",
+    "client": "Client_A",
+    "symbol": "HDFCBANK",
+    "quantity": 540,
+    "price": 1021.95,
+    "timestamp": "2026-10-06T09:35:35.766Z"
+  },
+  {
+    "tradeId": "TRD02432",
+    "client": "Client_E",
+    "symbol": "HDFCBANK",
+    "quantity": 880,
+    "price": 4916.74,
+    "timestamp": "2026-10-06T07:01:07.633Z"
+  },
+  {
+    "tradeId": "TRD02433",
+    "client": "Client_B",
+    "symbol": "AXISBANK",
+    "quantity": 120,
+    "price": 1434.65,
+    "timestamp": "2026-10-06T07:23:09.664Z"
+  },
+  {
+    "tradeId": "TRD02434",
+    "client": "Client_B",
+    "symbol": "RELIANCE",
+    "quantity": 150,
+    "price": 811.26,
+    "timestamp": "2026-10-06T09:37:53.727Z"
+  },
+  {
+    "tradeId": "TRD02435",
+    "client": "Client_G",
+    "symbol": "RELIANCE",
+    "quantity": 860,
+    "price": 1039.47,
+    "timestamp": "2026-10-06T04:15:13.060Z"
+  },
+  {
+    "tradeId": "TRD02436",
+    "client": "Client_F",
+    "symbol": "LT",
+    "quantity": 560,
+    "price": 3911.38,
+    "timestamp": "2026-10-06T09:02:55.059Z"
+  },
+  {
+    "tradeId": "TRD02437",
+    "client": "Client_D",
+    "symbol": "INFY",
+    "quantity": 130,
+    "price": 2807.45,
+    "timestamp": "2026-10-06T07:41:30.371Z"
+  },
+  {
+    "tradeId": "TRD02438",
+    "client": "Client_A",
+    "symbol": "ICICIBANK",
+    "quantity": 150,
+    "price": 4431.96,
+    "timestamp": "2026-10-06T08:03:24.145Z"
+  },
+  {
+    "tradeId": "TRD02439",
+    "client": "Client_D",
+    "symbol": "INFY",
+    "quantity": 880,
+    "price": 4981.7,
+    "timestamp": "2026-10-06T05:48:01.262Z"
+  },
+  {
+    "tradeId": "TRD02440",
+    "client": "Client_B",
+    "symbol": "HDFCBANK",
+    "quantity": 540,
+    "price": 2806.18,
+    "timestamp": "2026-10-06T08:36:40.474Z"
+  },
+  {
+    "tradeId": "TRD02441",
+    "client": "Client_G",
+    "symbol": "RELIANCE",
+    "quantity": 530,
+    "price": 2333.26,
+    "timestamp": "2026-10-06T04:16:06.908Z"
+  },
+  {
+    "tradeId": "TRD02442",
+    "client": "Client_A",
+    "symbol": "ICICIBANK",
+    "quantity": 340,
+    "price": 4596.09,
+    "timestamp": "2026-10-06T03:53:03.727Z"
+  },
+  {
+    "tradeId": "TRD02443",
+    "client": "Client_D",
+    "symbol": "SBIN",
+    "quantity": 970,
+    "price": 358.41,
+    "timestamp": "2026-10-06T07:21:41.649Z"
+  },
+  {
+    "tradeId": "TRD02444",
+    "client": "Client_F",
+    "symbol": "LT",
+    "quantity": 570,
+    "price": 3677.09,
+    "timestamp": "2026-10-06T09:00:59.803Z"
+  },
+  {
+    "tradeId": "TRD02445",
+    "client": "Client_F",
+    "symbol": "ICICIBANK",
+    "quantity": 810,
+    "price": 376.37,
+    "timestamp": "2026-10-06T07:50:37.784Z"
+  },
+  {
+    "tradeId": "TRD02446",
+    "client": "Client_A",
+    "symbol": "SBIN",
+    "quantity": 970,
+    "price": 4471.35,
+    "timestamp": "2026-10-06T08:41:48.005Z"
+  },
+  {
+    "tradeId": "TRD02447",
+    "client": "Client_B",
+    "symbol": "LT",
+    "quantity": 840,
+    "price": 1448.18,
+    "timestamp": "2026-10-06T05:53:21.603Z"
+  },
+  {
+    "tradeId": "TRD02448",
+    "client": "Client_E",
+    "symbol": "AXISBANK",
+    "quantity": 200,
+    "price": 1456.17,
+    "timestamp": "2026-10-06T08:43:42.887Z"
+  },
+  {
+    "tradeId": "TRD02449",
+    "client": "Client_A",
+    "symbol": "HDFCBANK",
+    "quantity": 180,
+    "price": 2068.06,
+    "timestamp": "2026-10-06T05:46:35.662Z"
+  },
+  {
+    "tradeId": "TRD02450",
+    "client": "Client_F",
+    "symbol": "HDFCBANK",
+    "quantity": 730,
+    "price": 3927.48,
+    "timestamp": "2026-10-06T06:21:28.485Z"
+  },
+  {
+    "tradeId": "TRD02451",
+    "client": "Client_B",
+    "symbol": "ICICIBANK",
+    "quantity": 770,
+    "price": 4053.9,
+    "timestamp": "2026-10-06T04:30:23.112Z"
+  },
+  {
+    "tradeId": "TRD02452",
+    "client": "Client_F",
+    "symbol": "SBIN",
+    "quantity": 120,
+    "price": 1264.1,
+    "timestamp": "2026-10-06T09:03:01.854Z"
+  },
+  {
+    "tradeId": "TRD02453",
+    "client": "Client_G",
+    "symbol": "INFY",
+    "quantity": 930,
+    "price": 849.12,
+    "timestamp": "2026-10-06T04:36:09.720Z"
+  },
+  {
+    "tradeId": "TRD02454",
+    "client": "Client_D",
+    "symbol": "AXISBANK",
+    "quantity": 400,
+    "price": 2230.98,
+    "timestamp": "2026-10-06T09:42:23.668Z"
+  },
+  {
+    "tradeId": "TRD02455",
+    "client": "Client_H",
+    "symbol": "ICICIBANK",
+    "quantity": 610,
+    "price": 1211.88,
+    "timestamp": "2026-10-06T09:56:15.269Z"
+  },
+  {
+    "tradeId": "TRD02456",
+    "client": "Client_B",
+    "symbol": "SBIN",
+    "quantity": 10,
+    "price": 4884.59,
+    "timestamp": "2026-10-06T05:33:51.266Z"
+  },
+  {
+    "tradeId": "TRD02457",
+    "client": "Client_F",
+    "symbol": "SBIN",
+    "quantity": 210,
+    "price": 708.94,
+    "timestamp": "2026-10-06T04:52:15.064Z"
+  },
+  {
+    "tradeId": "TRD02458",
+    "client": "Client_F",
+    "symbol": "ICICIBANK",
+    "quantity": 560,
+    "price": 1907.34,
+    "timestamp": "2026-10-06T05:44:34.053Z"
+  },
+  {
+    "tradeId": "TRD02459",
+    "client": "Client_H",
+    "symbol": "AXISBANK",
+    "quantity": 710,
+    "price": 4630.83,
+    "timestamp": "2026-10-06T07:14:44.081Z"
+  },
+  {
+    "tradeId": "TRD02460",
+    "client": "Client_H",
+    "symbol": "RELIANCE",
+    "quantity": 390,
+    "price": 3825.55,
+    "timestamp": "2026-10-06T07:27:58.194Z"
+  },
+  {
+    "tradeId": "TRD02461",
+    "client": "Client_D",
+    "symbol": "LT",
+    "quantity": 700,
+    "price": 721.13,
+    "timestamp": "2026-10-06T07:58:50.380Z"
+  },
+  {
+    "tradeId": "TRD02462",
+    "client": "Client_A",
+    "symbol": "SBIN",
+    "quantity": 700,
+    "price": 776.59,
+    "timestamp": "2026-10-06T03:57:24.252Z"
+  },
+  {
+    "tradeId": "TRD02463",
+    "client": "Client_A",
+    "symbol": "TCS",
+    "quantity": 170,
+    "price": 3935.53,
+    "timestamp": "2026-10-06T08:54:53.609Z"
+  },
+  {
+    "tradeId": "TRD02464",
+    "client": "Client_E",
+    "symbol": "WIPRO",
+    "quantity": 490,
+    "price": 1952.66,
+    "timestamp": "2026-10-06T04:52:17.183Z"
+  },
+  {
+    "tradeId": "TRD02465",
+    "client": "Client_C",
+    "symbol": "ITC",
+    "quantity": 740,
+    "price": 2955.03,
+    "timestamp": "2026-10-06T04:41:51.630Z"
+  },
+  {
+    "tradeId": "TRD02466",
+    "client": "Client_G",
+    "symbol": "LT",
+    "quantity": 510,
+    "price": 3221.31,
+    "timestamp": "2026-10-06T04:25:06.950Z"
+  },
+  {
+    "tradeId": "TRD02467",
+    "client": "Client_F",
+    "symbol": "INFY",
+    "quantity": 800,
+    "price": 2670.94,
+    "timestamp": "2026-10-06T06:19:25.055Z"
+  },
+  {
+    "tradeId": "TRD02468",
+    "client": "Client_A",
+    "symbol": "HDFCBANK",
+    "quantity": 660,
+    "price": 3660.39,
+    "timestamp": "2026-10-06T05:18:53.819Z"
+  },
+  {
+    "tradeId": "TRD02469",
+    "client": "Client_B",
+    "symbol": "TCS",
+    "quantity": 780,
+    "price": 3274.56,
+    "timestamp": "2026-10-06T09:35:25.449Z"
+  },
+  {
+    "tradeId": "TRD02470",
+    "client": "Client_H",
+    "symbol": "ITC",
+    "quantity": 880,
+    "price": 1185.06,
+    "timestamp": "2026-10-06T06:59:46.079Z"
+  },
+  {
+    "tradeId": "TRD02471",
+    "client": "Client_G",
+    "symbol": "RELIANCE",
+    "quantity": 750,
+    "price": 4055.2,
+    "timestamp": "2026-10-06T04:58:26.131Z"
+  },
+  {
+    "tradeId": "TRD02472",
+    "client": "Client_B",
+    "symbol": "TCS",
+    "quantity": 760,
+    "price": 446.15,
+    "timestamp": "2026-10-06T07:03:10.112Z"
+  },
+  {
+    "tradeId": "TRD02473",
+    "client": "Client_G",
+    "symbol": "WIPRO",
+    "quantity": 80,
+    "price": 3920.44,
+    "timestamp": "2026-10-06T06:59:39.524Z"
+  },
+  {
+    "tradeId": "TRD02474",
+    "client": "Client_A",
+    "symbol": "SBIN",
+    "quantity": 960,
+    "price": 3611.87,
+    "timestamp": "2026-10-06T07:12:10.855Z"
+  },
+  {
+    "tradeId": "TRD02475",
+    "client": "Client_A",
+    "symbol": "RELIANCE",
+    "quantity": 320,
+    "price": 847.85,
+    "timestamp": "2026-10-06T04:37:02.110Z"
+  },
+  {
+    "tradeId": "TRD02476",
+    "client": "Client_D",
+    "symbol": "ICICIBANK",
+    "quantity": 490,
+    "price": 2995.17,
+    "timestamp": "2026-10-06T08:00:36.598Z"
+  },
+  {
+    "tradeId": "TRD02477",
+    "client": "Client_D",
+    "symbol": "ICICIBANK",
+    "quantity": 340,
+    "price": 408.26,
+    "timestamp": "2026-10-06T03:52:16.522Z"
+  },
+  {
+    "tradeId": "TRD02478",
+    "client": "Client_A",
+    "symbol": "WIPRO",
+    "quantity": 260,
+    "price": 1139.4,
+    "timestamp": "2026-10-06T04:32:58.668Z"
+  },
+  {
+    "tradeId": "TRD02479",
+    "client": "Client_A",
+    "symbol": "ITC",
+    "quantity": 780,
+    "price": 2049.06,
+    "timestamp": "2026-10-06T06:44:17.623Z"
+  },
+  {
+    "tradeId": "TRD02480",
+    "client": "Client_G",
+    "symbol": "TCS",
+    "quantity": 260,
+    "price": 2531.49,
+    "timestamp": "2026-10-06T06:10:40.319Z"
+  },
+  {
+    "tradeId": "TRD02481",
+    "client": "Client_C",
+    "symbol": "LT",
+    "quantity": 740,
+    "price": 1163.09,
+    "timestamp": "2026-10-06T06:42:21.623Z"
+  },
+  {
+    "tradeId": "TRD02482",
+    "client": "Client_B",
+    "symbol": "INFY",
+    "quantity": 450,
+    "price": 2078.69,
+    "timestamp": "2026-10-06T06:27:29.809Z"
+  },
+  {
+    "tradeId": "TRD02483",
+    "client": "Client_G",
+    "symbol": "AXISBANK",
+    "quantity": 300,
+    "price": 2615.63,
+    "timestamp": "2026-10-06T04:32:04.787Z"
+  },
+  {
+    "tradeId": "TRD02484",
+    "client": "Client_F",
+    "symbol": "AXISBANK",
+    "quantity": 300,
+    "price": 1216.02,
+    "timestamp": "2026-10-06T09:28:04.786Z"
+  },
+  {
+    "tradeId": "TRD02485",
+    "client": "Client_H",
+    "symbol": "RELIANCE",
+    "quantity": 750,
+    "price": 4200.29,
+    "timestamp": "2026-10-06T06:05:57.648Z"
+  },
+  {
+    "tradeId": "TRD02486",
+    "client": "Client_H",
+    "symbol": "HDFCBANK",
+    "quantity": 520,
+    "price": 1924.88,
+    "timestamp": "2026-10-06T09:23:59.792Z"
+  },
+  {
+    "tradeId": "TRD02487",
+    "client": "Client_A",
+    "symbol": "HDFCBANK",
+    "quantity": 430,
+    "price": 3166.67,
+    "timestamp": "2026-10-06T04:20:41.024Z"
+  },
+  {
+    "tradeId": "TRD02488",
+    "client": "Client_A",
+    "symbol": "AXISBANK",
+    "quantity": 760,
+    "price": 677.23,
+    "timestamp": "2026-10-06T05:49:19.441Z"
+  },
+  {
+    "tradeId": "TRD02489",
+    "client": "Client_D",
+    "symbol": "RELIANCE",
+    "quantity": 490,
+    "price": 1695.25,
+    "timestamp": "2026-10-06T08:14:11.151Z"
+  },
+  {
+    "tradeId": "TRD02490",
+    "client": "Client_B",
+    "symbol": "WIPRO",
+    "quantity": 440,
+    "price": 4593.87,
+    "timestamp": "2026-10-06T06:20:03.520Z"
+  },
+  {
+    "tradeId": "TRD02491",
+    "client": "Client_E",
+    "symbol": "HDFCBANK",
+    "quantity": 620,
+    "price": 702.06,
+    "timestamp": "2026-10-06T06:19:57.477Z"
+  },
+  {
+    "tradeId": "TRD02492",
+    "client": "Client_C",
+    "symbol": "INFY",
+    "quantity": 510,
+    "price": 3557.03,
+    "timestamp": "2026-10-06T08:00:42.636Z"
+  },
+  {
+    "tradeId": "TRD02493",
+    "client": "Client_A",
+    "symbol": "TCS",
+    "quantity": 220,
+    "price": 3420.28,
+    "timestamp": "2026-10-06T06:19:40.107Z"
+  },
+  {
+    "tradeId": "TRD02494",
+    "client": "Client_H",
+    "symbol": "WIPRO",
+    "quantity": 970,
+    "price": 158.01,
+    "timestamp": "2026-10-06T07:10:30.295Z"
+  },
+  {
+    "tradeId": "TRD02495",
+    "client": "Client_B",
+    "symbol": "TCS",
+    "quantity": 740,
+    "price": 4734.92,
+    "timestamp": "2026-10-06T06:40:38.230Z"
+  },
+  {
+    "tradeId": "TRD02496",
+    "client": "Client_H",
+    "symbol": "RELIANCE",
+    "quantity": 340,
+    "price": 1690.81,
+    "timestamp": "2026-10-06T06:52:30.315Z"
+  },
+  {
+    "tradeId": "TRD02497",
+    "client": "Client_B",
+    "symbol": "RELIANCE",
+    "quantity": 310,
+    "price": 1904.77,
+    "timestamp": "2026-10-06T08:01:25.611Z"
+  },
+  {
+    "tradeId": "TRD02498",
+    "client": "Client_C",
+    "symbol": "RELIANCE",
+    "quantity": 670,
+    "price": 3196.65,
+    "timestamp": "2026-10-06T09:49:19.909Z"
+  },
+  {
+    "tradeId": "TRD02499",
+    "client": "Client_A",
+    "symbol": "TCS",
+    "quantity": 560,
+    "price": 1266.58,
+    "timestamp": "2026-10-06T09:11:39.599Z"
+  },
+  {
+    "tradeId": "TRD02500",
+    "client": "Client_A",
+    "symbol": "HDFCBANK",
+    "quantity": 550,
+    "price": 184.79,
+    "timestamp": "2026-10-06T04:58:14.297Z"
+  },
+  {
+    "tradeId": "TRD02501",
+    "client": "Client_H",
+    "symbol": "SBIN",
+    "quantity": 30,
+    "price": 1564.75,
+    "timestamp": "2026-10-06T09:25:09.021Z"
+  },
+  {
+    "tradeId": "TRD02502",
+    "client": "Client_A",
+    "symbol": "ICICIBANK",
+    "quantity": 500,
+    "price": 1098.26,
+    "timestamp": "2026-10-06T08:24:33.848Z"
+  },
+  {
+    "tradeId": "TRD02503",
+    "client": "Client_G",
+    "symbol": "SBIN",
+    "quantity": 260,
+    "price": 905.54,
+    "timestamp": "2026-10-06T05:26:30.004Z"
+  },
+  {
+    "tradeId": "TRD02504",
+    "client": "Client_D",
+    "symbol": "RELIANCE",
+    "quantity": 730,
+    "price": 102.01,
+    "timestamp": "2026-10-06T09:55:23.668Z"
+  },
+  {
+    "tradeId": "TRD02505",
+    "client": "Client_E",
+    "symbol": "INFY",
+    "quantity": 910,
+    "price": 881.34,
+    "timestamp": "2026-10-06T07:03:04.166Z"
+  },
+  {
+    "tradeId": "TRD02506",
+    "client": "Client_B",
+    "symbol": "AXISBANK",
+    "quantity": 710,
+    "price": 936.83,
+    "timestamp": "2026-10-06T07:07:40.958Z"
+  },
+  {
+    "tradeId": "TRD02507",
+    "client": "Client_C",
+    "symbol": "HDFCBANK",
+    "quantity": 610,
+    "price": 3789.41,
+    "timestamp": "2026-10-06T09:48:50.246Z"
+  },
+  {
+    "tradeId": "TRD02508",
+    "client": "Client_C",
+    "symbol": "RELIANCE",
+    "quantity": 150,
+    "price": 4723.28,
+    "timestamp": "2026-10-06T09:48:30.238Z"
+  },
+  {
+    "tradeId": "TRD02509",
+    "client": "Client_F",
+    "symbol": "LT",
+    "quantity": 890,
+    "price": 3979,
+    "timestamp": "2026-10-06T09:27:54.296Z"
+  },
+  {
+    "tradeId": "TRD02510",
+    "client": "Client_C",
+    "symbol": "INFY",
+    "quantity": 140,
+    "price": 3061.1,
+    "timestamp": "2026-10-06T06:10:52.546Z"
+  },
+  {
+    "tradeId": "TRD02511",
+    "client": "Client_A",
+    "symbol": "LT",
+    "quantity": 290,
+    "price": 4831.23,
+    "timestamp": "2026-10-06T05:30:44.306Z"
+  },
+  {
+    "tradeId": "TRD02512",
+    "client": "Client_B",
+    "symbol": "INFY",
+    "quantity": 950,
+    "price": 120.46,
+    "timestamp": "2026-10-06T06:14:46.590Z"
+  },
+  {
+    "tradeId": "TRD02513",
+    "client": "Client_C",
+    "symbol": "SBIN",
+    "quantity": 60,
+    "price": 3628.91,
+    "timestamp": "2026-10-06T05:29:31.637Z"
+  },
+  {
+    "tradeId": "TRD02514",
+    "client": "Client_D",
+    "symbol": "ITC",
+    "quantity": 390,
+    "price": 1034.24,
+    "timestamp": "2026-10-06T09:44:48.171Z"
+  },
+  {
+    "tradeId": "TRD02515",
+    "client": "Client_C",
+    "symbol": "ICICIBANK",
+    "quantity": 10,
+    "price": 4097.6,
+    "timestamp": "2026-10-06T03:45:02.936Z"
+  },
+  {
+    "tradeId": "TRD02516",
+    "client": "Client_C",
+    "symbol": "LT",
+    "quantity": 940,
+    "price": 4303.77,
+    "timestamp": "2026-10-06T05:20:17.242Z"
+  },
+  {
+    "tradeId": "TRD02517",
+    "client": "Client_H",
+    "symbol": "RELIANCE",
+    "quantity": 660,
+    "price": 4476.32,
+    "timestamp": "2026-10-06T05:57:03.975Z"
+  },
+  {
+    "tradeId": "TRD02518",
+    "client": "Client_B",
+    "symbol": "AXISBANK",
+    "quantity": 390,
+    "price": 2043.85,
+    "timestamp": "2026-10-06T09:39:47.762Z"
+  },
+  {
+    "tradeId": "TRD02519",
+    "client": "Client_C",
+    "symbol": "WIPRO",
+    "quantity": 910,
+    "price": 193.96,
+    "timestamp": "2026-10-06T03:57:18.210Z"
+  },
+  {
+    "tradeId": "TRD02520",
+    "client": "Client_H",
+    "symbol": "WIPRO",
+    "quantity": 40,
+    "price": 1498.34,
+    "timestamp": "2026-10-06T05:58:32.042Z"
+  },
+  {
+    "tradeId": "TRD02521",
+    "client": "Client_C",
+    "symbol": "RELIANCE",
+    "quantity": 390,
+    "price": 149.67,
+    "timestamp": "2026-10-06T09:26:12.951Z"
+  },
+  {
+    "tradeId": "TRD02522",
+    "client": "Client_A",
+    "symbol": "RELIANCE",
+    "quantity": 860,
+    "price": 615.85,
+    "timestamp": "2026-10-06T05:35:50.002Z"
+  },
+  {
+    "tradeId": "TRD02523",
+    "client": "Client_B",
+    "symbol": "ITC",
+    "quantity": 820,
+    "price": 2317.79,
+    "timestamp": "2026-10-06T05:57:34.667Z"
+  },
+  {
+    "tradeId": "TRD02524",
+    "client": "Client_E",
+    "symbol": "SBIN",
+    "quantity": 480,
+    "price": 3685.98,
+    "timestamp": "2026-10-06T03:57:06.840Z"
+  },
+  {
+    "tradeId": "TRD02525",
+    "client": "Client_A",
+    "symbol": "ICICIBANK",
+    "quantity": 260,
+    "price": 1233.64,
+    "timestamp": "2026-10-06T06:24:38.200Z"
+  },
+  {
+    "tradeId": "TRD02526",
+    "client": "Client_G",
+    "symbol": "SBIN",
+    "quantity": 660,
+    "price": 1024.59,
+    "timestamp": "2026-10-06T04:53:57.770Z"
+  },
+  {
+    "tradeId": "TRD02527",
+    "client": "Client_H",
+    "symbol": "TCS",
+    "quantity": 900,
+    "price": 211.01,
+    "timestamp": "2026-10-06T06:34:21.011Z"
+  },
+  {
+    "tradeId": "TRD02528",
+    "client": "Client_F",
+    "symbol": "ICICIBANK",
+    "quantity": 860,
+    "price": 4759.81,
+    "timestamp": "2026-10-06T09:38:32.391Z"
+  },
+  {
+    "tradeId": "TRD02529",
+    "client": "Client_G",
+    "symbol": "WIPRO",
+    "quantity": 880,
+    "price": 4122.18,
+    "timestamp": "2026-10-06T06:46:49.582Z"
+  },
+  {
+    "tradeId": "TRD02530",
+    "client": "Client_A",
+    "symbol": "AXISBANK",
+    "quantity": 700,
+    "price": 2361.79,
+    "timestamp": "2026-10-06T05:41:47.741Z"
   }
 ]
